@@ -49,26 +49,28 @@ Description: A two-column, fixed-width template.
       <p><a href="/keyphrase_extraction/textrank">Try Keyphrase Extraction Using TextRank</a></p>
       <h2>Input your parameters</h2>
       <form method="POST" action="/get_keyphrases">
-          <p>Input the text file that you want to extract: </p>
-          <input type="text" name="text">
-          <p>Minimum character length in a word</p>
+          <p>Input the file name that you want to extract: (eg: Bar_soup.xlsx)</p>
+          <input type="text" name="name">
+          <p>Input the question you want to extract: (eg: What is Healthy Skin?)</p>
+          <input type="text" name="question">
+          <p>Minimum character length in a word: (eg:2)</p>
           <input type="text" name="min_char_length">
-          <p>Minimum word length in a phrase</p>
+          <p>Minimum word length in a phrase: (eg:2)</p>
           <input type="text" name="min_words_length">
-          <p>Maximum word length in a phrase</p>
+          <p>Maximum word length in a phrase: (eg:7)</p>
           <input type="text" name="max_words_length">
-          <p>Minimum phrase frequency in the text</p>
+          <p>Minimum phrase frequency in the text: (eg:1)</p>
           <input type="text" name="min_keyword_frequency">
-          <p>Frequency Trade Off</p>
+          <p>Frequency Trade Off: choose from 0 to 1</p>
           <input type="text" name="trade_off">
-          <p>Number of keyphrases to see</p>
+          <p>Number of keyphrases to see: (eg:10)</p>
           <input type="text" name="top_n">
           <input type="submit" value="Submit">
       </form>
     </div>
     
   </div>
-
+</div>
 <!-- end page -->
 </body>
 </html>

@@ -48,9 +48,11 @@ Description: A two-column, fixed-width template.
       <h1 class="title2"><center>Keyphrase Extraction Using TextRank</center></h1>
       <h2>Input your parameters</h2>
       <form method="POST" action="/get_keyphrases_textrank">
-          <p>Input the text file that you want to extract: </p>
-          <input type="text" name="textrank_text">
-          <p>Number of keyphrases to see</p>
+          <p>Input the filename that you want to extract: (eg: Bar_soup.xlsx)</p>
+          <input type="text" name="textrank_name">
+          <p>Input the question you want to extract: (eg: What is Healthy Skin?)</p>
+          <input type="text" name="textrank_question">
+          <p>Number of keyphrases to see: (eg:10)</p>
           <input type="text" name="top_n_textrank">
           <input type="submit" value="Submit">
       </form>
